@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@my-nx-npm/hello-tsc": ["packages/hello-tsc/src/index.ts"],
+      "@my-nx-npm/my-nx-plugin": ["packages/my-nx-plugin/src/index.ts"],
+      "@my-nx-npm/my-other-package": ["packages/my-other-package/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
