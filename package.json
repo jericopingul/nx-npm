@@ -10,7 +10,7 @@
     "build": "nx affected:build --parallel",
     "release": "changeset release"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@nrwl/js": "^14.3.6",
     "@swc/helpers": "~0.3.3",
