@@ -59,7 +59,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "cwd": "dist/packages/my-nx-plugin",
-        "command": "yarn publish"
+        "command": "pnpm publish"
       }
     }
   },

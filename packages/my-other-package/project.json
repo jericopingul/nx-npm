@@ -33,7 +33,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "cwd": "dist/packages/my-other-package",
-        "command": "yarn publish"
+        "command": "pnpm publish"
       }
     }
   },
