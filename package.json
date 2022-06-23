@@ -7,7 +7,7 @@
     "url": "https://github.com/jericopingul/nx-npm.git"
   },
   "scripts": {
-    "build": "nx affected:build --parallel",
+    "build": "nx affected:build",
     "release": "changeset publish"
   },
   "private": false,
