@@ -1,5 +1,8 @@
 {
   "name": "@my-nx-npm/hello-tsc",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
