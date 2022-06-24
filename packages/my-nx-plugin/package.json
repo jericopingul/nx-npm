@@ -4,6 +4,11 @@
   "main": "src/index.js",
   "generators": "./generators.json",
   "executors": "./executors.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jericopingul/nx-npm.git",
+    "directory": "packages/my-nx-plugin"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   }

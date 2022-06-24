@@ -1,5 +1,13 @@
 {
   "name": "@my-nx-npm/my-other-package",
   "version": "0.3.0",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jericopingul/nx-npm.git",
+    "directory": "packages/my-other-package"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
