@@ -1,5 +1,11 @@
 # @jericopingul/my-other-package
 
+## 1.1.0
+
+### Minor Changes
+
+- dd99abec: minor 7
+
 ## 1.0.0
 
 ### Major Changes
