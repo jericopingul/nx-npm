@@ -1,5 +1,11 @@
 # @jericopingul/my-nx-plugin
 
+## 1.2.0
+
+### Minor Changes
+
+- c7ef0dfd: major 5
+
 ## 1.1.0
 
 ### Minor Changes

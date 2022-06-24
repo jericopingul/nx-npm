@@ -1,5 +1,11 @@
 # @jericopingul/my-other-package
 
+## 1.0.0
+
+### Major Changes
+
+- c7ef0dfd: major 5
+
 ## 0.4.0
 
 ### Minor Changes
