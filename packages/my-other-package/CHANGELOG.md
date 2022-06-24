@@ -1,5 +1,11 @@
 # @jericopingul/my-other-package
 
+## 2.0.3
+
+### Patch Changes
+
+- b3d95c8d: patch
+
 ## 2.0.2
 
 ### Patch Changes
