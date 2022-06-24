@@ -1,0 +1,84 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.generatorSchematic = exports.generatorGenerator = void 0;
+const tslib_1 = require("tslib");
+const devkit_1 = require("@nrwl/devkit");
+const devkit_2 = require("@nrwl/devkit");
+const path = require("path");
+function normalizeOptions(host, options) {
+    const { npmScope } = (0, devkit_2.getWorkspaceLayout)(host);
+    const { fileName, className } = (0, devkit_2.names)(options.name);
+    const { root: projectRoot, sourceRoot: projectSourceRoot } = (0, devkit_2.readProjectConfiguration)(host, options.project);
+    const npmPackageName = (0, devkit_2.readJson)(host, path.join(projectRoot, 'package.json')).name;
+    let description;
+    if (options.description) {
+        description = options.description;
+    }
+    else {
+        description = `${options.name} generator`;
+    }
+    return Object.assign(Object.assign({}, options), { fileName,
+        className,
+        description,
+        projectRoot,
+        projectSourceRoot,
+        npmScope,
+        npmPackageName });
+}
+function addFiles(host, options) {
+    const indexPath = `${options.projectSourceRoot}/generators/${options.fileName}/files/src/index.ts__template__`;
+    if (!host.exists(indexPath)) {
+        host.write(indexPath, 'const variable = "<%= projectName %>";');
+    }
+    (0, devkit_2.generateFiles)(host, path.join(__dirname, './files/generator'), `${options.projectSourceRoot}/generators`, Object.assign(Object.assign({}, options), { tmpl: '' }));
+    if (options.unitTestRunner === 'none') {
+        host.delete(path.join(options.projectSourceRoot, 'generators', options.fileName, `generator.spec.ts`));
+    }
+}
+function createGeneratorsJson(host, options) {
+    (0, devkit_2.updateJson)(host, (0, devkit_1.joinPathFragments)(options.projectRoot, 'package.json'), (json) => {
+        var _a;
+        (_a = json.generators) !== null && _a !== void 0 ? _a : (json.generators = 'generators.json');
+        return json;
+    });
+    (0, devkit_1.writeJson)(host, (0, devkit_1.joinPathFragments)(options.projectRoot, 'generators.json'), {
+        generators: {},
+    });
+}
+function updateGeneratorJson(host, options) {
+    var _a;
+    const packageJson = (0, devkit_2.readJson)(host, (0, devkit_1.joinPathFragments)(options.projectRoot, 'package.json'));
+    const packageJsonGenerators = (_a = packageJson.generators) !== null && _a !== void 0 ? _a : packageJson.schematics;
+    let generatorsPath = packageJsonGenerators
+        ? (0, devkit_1.joinPathFragments)(options.projectRoot, packageJsonGenerators)
+        : null;
+    if (!generatorsPath) {
+        generatorsPath = (0, devkit_1.joinPathFragments)(options.projectRoot, 'generators.json');
+    }
+    if (!host.exists(generatorsPath)) {
+        createGeneratorsJson(host, options);
+    }
+    return (0, devkit_2.updateJson)(host, generatorsPath, (json) => {
+        var _a;
+        let generators = (_a = json.generators) !== null && _a !== void 0 ? _a : json.schematics;
+        generators = generators || {};
+        generators[options.name] = {
+            factory: `./src/generators/${options.name}/generator`,
+            schema: `./src/generators/${options.name}/schema.json`,
+            description: options.description,
+        };
+        json.generators = generators;
+        return json;
+    });
+}
+function generatorGenerator(host, schema) {
+    return tslib_1.__awaiter(this, void 0, void 0, function* () {
+        const options = normalizeOptions(host, schema);
+        addFiles(host, options);
+        updateGeneratorJson(host, options);
+    });
+}
+exports.generatorGenerator = generatorGenerator;
+exports.default = generatorGenerator;
+exports.generatorSchematic = (0, devkit_2.convertNxGenerator)(generatorGenerator);
+//# sourceMappingURL=generator.js.map
