@@ -1,5 +1,11 @@
 # @my-nx-npm/my-other-package
 
+## 0.3.0
+
+### Minor Changes
+
+- b33c7aff: other packages bump
+
 ## 0.2.0
 
 ### Minor Changes
