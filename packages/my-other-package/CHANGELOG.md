@@ -1,5 +1,11 @@
 # @my-nx-npm/my-other-package
 
+## 0.4.0
+
+### Minor Changes
+
+- c25474a9: feat 5
+
 ## 0.3.0
 
 ### Minor Changes
