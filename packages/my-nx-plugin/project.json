@@ -54,13 +54,6 @@
         "jestConfig": "packages/my-nx-plugin/jest.config.ts",
         "passWithNoTests": true
       }
-    },
-    "publish": {
-      "executor": "@nrwl/workspace:run-commands",
-      "options": {
-        "cwd": "dist/packages/my-nx-plugin",
-        "command": "pnpm publish"
-      }
     }
   },
   "tags": [],

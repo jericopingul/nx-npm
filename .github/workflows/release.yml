@@ -42,6 +42,10 @@ jobs:
       - name: Build Projects
         run: pnpm build
 
+        # update pnpm-workspace.yaml to point to dist
+      - name: Modify Workspace File
+        run: sed -e "s|'packages\/|'dist/|" pnpm-workspace.yaml > pnpm-new.yaml && mv pnpm-new.yaml pnpm-workspace.yaml
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
