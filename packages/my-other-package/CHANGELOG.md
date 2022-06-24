@@ -1,5 +1,11 @@
 # @jericopingul/my-other-package
 
+## 2.0.1
+
+### Patch Changes
+
+- 9861c95e: patch
+
 ## 2.0.0
 
 ### Major Changes
