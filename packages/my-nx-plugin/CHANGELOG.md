@@ -1,5 +1,11 @@
 # @jericopingul/my-nx-plugin
 
+## 2.0.2
+
+### Patch Changes
+
+- 09cfe40d: patch
+
 ## 2.0.1
 
 ### Patch Changes
