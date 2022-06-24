@@ -14,7 +14,7 @@
       }
     },
     "my-executor": {
-      "executor": "@my-nx-npm/my-nx-plugin:my-executor"
+      "executor": "@jericopingul/my-nx-plugin:my-executor"
     },
     "publish": {
       "executor": "@nrwl/workspace:run-commands",

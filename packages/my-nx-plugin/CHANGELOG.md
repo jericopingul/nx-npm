@@ -1,4 +1,4 @@
-# @my-nx-npm/my-nx-plugin
+# @jericopingul/my-nx-plugin
 
 ## 1.1.0
 

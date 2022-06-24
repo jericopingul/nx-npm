@@ -1,4 +1,4 @@
-# @my-nx-npm/my-other-package
+# @jericopingul/my-other-package
 
 ## 0.4.0
 

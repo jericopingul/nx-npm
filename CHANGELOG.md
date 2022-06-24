@@ -1,4 +1,4 @@
-# my-nx-npm
+# jericopingul
 
 ## 0.1.0
 
