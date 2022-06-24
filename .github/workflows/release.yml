@@ -37,7 +37,7 @@ jobs:
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
 
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm i --frozen-lockfile=false
 
       - name: Build Projects
         run: pnpm build
