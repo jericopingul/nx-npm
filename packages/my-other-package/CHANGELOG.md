@@ -1,5 +1,11 @@
 # @jericopingul/my-other-package
 
+## 2.3.0
+
+### Minor Changes
+
+- d2049a38: summary
+
 ## 2.2.0
 
 ### Minor Changes

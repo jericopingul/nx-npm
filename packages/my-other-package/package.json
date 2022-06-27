@@ -1,6 +1,6 @@
 {
   "name": "@jericopingul/my-other-package",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "type": "commonjs",
   "main": "src/index.js",
   "types": "src/index.d.ts",
