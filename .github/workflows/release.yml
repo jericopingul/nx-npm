@@ -43,6 +43,10 @@ jobs:
       - name: Build Projects
         run: yarn build
 
+        # update package.json to point to dist
+      - name: Modify Workspace File
+        run: sed -e "s|\"packages\/|\"dist/|" package.json > package-new.json && mv package-new.json package.json
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
