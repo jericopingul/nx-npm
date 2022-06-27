@@ -2,6 +2,7 @@
   "name": "@jericopingul/my-nx-plugin",
   "version": "2.1.0",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "generators": "./generators.json",
   "executors": "./executors.json",
   "repository": {

@@ -11,7 +11,7 @@
     "release": "changeset publish"
   },
   "workspaces": [
-    "dist/**"
+    "packages/**"
   ],
   "dependencies": {
     "@nrwl/js": "^14.3.6",

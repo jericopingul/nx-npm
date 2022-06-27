@@ -704,6 +704,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jericopingul/hello-tsc@workspace:packages/hello-tsc":
+  version: 0.0.0-use.local
+  resolution: "@jericopingul/hello-tsc@workspace:packages/hello-tsc"
+  languageName: unknown
+  linkType: soft
+
+"@jericopingul/my-nx-plugin@workspace:packages/my-nx-plugin":
+  version: 0.0.0-use.local
+  resolution: "@jericopingul/my-nx-plugin@workspace:packages/my-nx-plugin"
+  languageName: unknown
+  linkType: soft
+
+"@jericopingul/my-other-package@workspace:packages/my-other-package":
+  version: 0.0.0-use.local
+  resolution: "@jericopingul/my-other-package@workspace:packages/my-other-package"
+  languageName: unknown
+  linkType: soft
+
 "@jest/console@npm:^27.5.1":
   version: 27.5.1
   resolution: "@jest/console@npm:27.5.1"
