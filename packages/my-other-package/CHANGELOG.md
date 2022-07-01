@@ -1,5 +1,11 @@
 # @jericopingul/my-other-package
 
+## 3.0.0
+
+### Major Changes
+
+- [`4778d9f8`](https://github.com/jericopingul/nx-npm/commit/4778d9f80acd7f23599efffbd64cee24e4ce45eb) Thanks [@jericopingul](https://github.com/jericopingul)! - major
+
 ## 2.2.0
 
 ### Minor Changes
