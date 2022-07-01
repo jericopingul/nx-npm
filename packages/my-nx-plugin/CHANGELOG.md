@@ -1,5 +1,11 @@
 # @jericopingul/my-nx-plugin
 
+## 2.2.0
+
+### Minor Changes
+
+- 2024bd31: minor both
+
 ## 2.1.0
 
 ### Minor Changes
