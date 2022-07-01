@@ -19,9 +19,9 @@ jobs:
         with:
           # We need to fetch all branches and commits so that Nx affected has a base to compare against.
           fetch-depth: 0
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 7
+      # - uses: pnpm/action-setup@v2.2.2
+      #   with:
+      #     version: 7
           
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v2
@@ -33,18 +33,20 @@ jobs:
 
       - name: Setup npmrc
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
-      - name: setup pnpm config
-        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+      # - name: setup pnpm config
+      #   run: pnpm config set store-dir $PNPM_CACHE_FOLDER
 
+      # - name: Install Dependencies
+      #   run: pnpm i --frozen-lockfile=false
       - name: Install Dependencies
-        run: pnpm i --frozen-lockfile=false
+        run: yarn install --frozen-lockfile
 
       - name: Build Projects
-        run: pnpm build
+        run: yarn build
 
         # update pnpm-workspace.yaml to point to dist
-      - name: Modify Workspace File
-        run: sed -e "s|'packages\/|'dist/|" pnpm-workspace.yaml > pnpm-new.yaml && mv pnpm-new.yaml pnpm-workspace.yaml
+      # - name: Modify Workspace File
+      #   run: sed -e "s|'packages\/|'dist/|" pnpm-workspace.yaml > pnpm-new.yaml && mv pnpm-new.yaml pnpm-workspace.yaml
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
