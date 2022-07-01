@@ -1,6 +1,6 @@
 {
   "name": "@jericopingul/hello-tsc",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "type": "commonjs",
   "repository": {
     "type": "git",
@@ -8,6 +8,7 @@
     "directory": "dist/hello-tsc"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "directory": "../../dist/packages/hello-tsc"
   }
 }

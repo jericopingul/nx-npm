@@ -1,5 +1,11 @@
 # @jericopingul/my-other-package
 
+## 2.1.1
+
+### Patch Changes
+
+- minor and patch
+
 ## 2.1.0
 
 ### Minor Changes

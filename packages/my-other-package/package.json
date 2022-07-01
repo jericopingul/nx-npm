@@ -1,6 +1,6 @@
 {
   "name": "@jericopingul/my-other-package",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "type": "commonjs",
   "repository": {
     "type": "git",
@@ -8,6 +8,7 @@
     "directory": "dist/my-other-package"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "directory": "../../dist/packages/my-other-package"
   }
 }

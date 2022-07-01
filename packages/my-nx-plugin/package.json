@@ -1,6 +1,6 @@
 {
   "name": "@jericopingul/my-nx-plugin",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "main": "src/index.js",
   "generators": "./generators.json",
   "executors": "./executors.json",
@@ -10,6 +10,7 @@
     "directory": "dist/my-nx-plugin"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "directory": "../../dist/packages/my-nx-plugin"
   }
 }

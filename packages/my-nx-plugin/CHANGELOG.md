@@ -1,5 +1,11 @@
 # @jericopingul/my-nx-plugin
 
+## 2.3.0
+
+### Minor Changes
+
+- minor and patch
+
 ## 2.2.1
 
 ### Patch Changes
