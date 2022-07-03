@@ -32,7 +32,7 @@ jobs:
           node-version: 16.x
 
       - name: Setup npmrc
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
+        run: ls && cat .npmrc && echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc && cat .npmrc
       # - name: setup pnpm config
       #   run: pnpm config set store-dir $PNPM_CACHE_FOLDER
 
