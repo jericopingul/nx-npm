@@ -26,4 +26,4 @@ jobs:
           node-version: 16.x
 
       - name: Run test
-        uses: yarn test 
+        run: yarn test 
