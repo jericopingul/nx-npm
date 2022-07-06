@@ -1,5 +1,11 @@
 # @jericopingul/hello-tsc
 
+## 0.3.0
+
+### Minor Changes
+
+- [`3592c815`](https://github.com/jericopingul/nx-npm/commit/3592c815ad7757e323b00b343d16cff4fd1696eb) Thanks [@jericopingul](https://github.com/jericopingul)! - updates
+
 ## 0.2.2
 
 ### Patch Changes
