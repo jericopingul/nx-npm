@@ -10,7 +10,6 @@
     "directory": "dist/my-nx-plugin"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
     "directory": "../../dist/packages/my-nx-plugin"
   }
 }

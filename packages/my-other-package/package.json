@@ -8,7 +8,6 @@
     "directory": "dist/my-other-package"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
     "directory": "../../dist/packages/my-other-package"
   }
 }

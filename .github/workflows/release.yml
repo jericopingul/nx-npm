@@ -8,6 +8,7 @@ on:
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   release:
@@ -31,8 +32,6 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Setup npmrc
-        run: ls && cat .npmrc && echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc && cat .npmrc
       # - name: setup pnpm config
       #   run: pnpm config set store-dir $PNPM_CACHE_FOLDER
 
