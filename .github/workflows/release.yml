@@ -48,6 +48,8 @@ jobs:
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v2
 
+      - name: Setup npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
 
       # - name: setup pnpm config
       #   run: pnpm config set store-dir $PNPM_CACHE_FOLDER
