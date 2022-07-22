@@ -1,5 +1,11 @@
 # @jericopingul/my-nx-plugin
 
+## 2.4.0
+
+### Minor Changes
+
+- [`fa2e8dc4`](https://github.com/jericopingul/nx-npm/commit/fa2e8dc4ef7222bc3ab8b440f536d348b013fdc5) Thanks [@jericopingul](https://github.com/jericopingul)! - preset
+
 ## 2.3.0
 
 ### Minor Changes
