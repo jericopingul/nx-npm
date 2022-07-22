@@ -1,5 +1,11 @@
 # @jericopingul/my-nx-plugin
 
+## 2.4.1
+
+### Patch Changes
+
+- [`60257729`](https://github.com/jericopingul/nx-npm/commit/602577298b789eceaaf4b16bafaf1569d3a16b0e) Thanks [@jericopingul](https://github.com/jericopingul)! - patch
+
 ## 2.4.0
 
 ### Minor Changes
