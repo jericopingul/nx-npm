@@ -7,6 +7,11 @@
       "factory": "./src/generators/my-nx-plugin/generator",
       "schema": "./src/generators/my-nx-plugin/schema.json",
       "description": "my-nx-plugin generator"
+    },
+    "preset": {
+      "factory": "./src/generators/preset/generator",
+      "schema": "./src/generators/preset/schema.json",
+      "description": "preset generator"
     }
   }
 }
