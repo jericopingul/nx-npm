@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "nx run-many --target=build",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "test": "nx affected:test"
   },
   "private": true,
   "dependencies": {
@@ -50,4 +51,3 @@
     "registry": "https://npm.pkg.github.com"
   }
 }
-
