@@ -8,5 +8,8 @@
     "type": "git",
     "url": "https://github.com/jericopingul/nx-npm.git",
     "directory": "packages/my-nx-plugin"
+  },
+  "devDependencies": {
+    "@jericopingul/my-other-package": "workspace:^"
   }
 }

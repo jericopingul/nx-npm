@@ -66,10 +66,16 @@ importers:
       typescript: 4.8.4
 
   packages/hello-tsc:
-    specifiers: {}
+    specifiers:
+      '@jericopingul/my-other-package': workspace:^
+    devDependencies:
+      '@jericopingul/my-other-package': link:../my-other-package
 
   packages/my-nx-plugin:
-    specifiers: {}
+    specifiers:
+      '@jericopingul/my-other-package': workspace:^
+    devDependencies:
+      '@jericopingul/my-other-package': link:../my-other-package
 
   packages/my-other-package:
     specifiers: {}
