@@ -9,8 +9,5 @@
   },
   "devDependencies": {
     "@jericopingul/my-other-package": "workspace:^"
-  },
-  "publishConfig": {
-    "directory": "../../dist/packages/hello-tsc"
   }
 }
