@@ -25,7 +25,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/hello-tsc"],
+      "outputs": ["{workspaceRoot}/coverage/packages/hello-tsc"],
       "options": {
         "jestConfig": "packages/hello-tsc/jest.config.ts",
         "passWithNoTests": true
