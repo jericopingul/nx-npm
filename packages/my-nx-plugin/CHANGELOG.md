@@ -1,5 +1,11 @@
 # @jericopingul/my-nx-plugin
 
+## 2.5.0
+
+### Minor Changes
+
+- [#31](https://github.com/jericopingul/nx-npm/pull/31) [`451413d1`](https://github.com/jericopingul/nx-npm/commit/451413d1166b3b1f695931b755be3f4f26e9afc7) Thanks [@jerico-wf](https://github.com/jerico-wf)! - Minor for my-other-package and minor for the other
+
 ## 2.4.3
 
 ### Patch Changes
