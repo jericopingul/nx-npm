@@ -1,3 +1,3 @@
 export function myOtherPackage(): string {
-  return 'my-other-package update 12';
+  return 'my-other-package update 14';
 }
