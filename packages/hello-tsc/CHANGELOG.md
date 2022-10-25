@@ -1,5 +1,11 @@
 # @jericopingul/hello-tsc
 
+## 0.4.0
+
+### Minor Changes
+
+- Test
+
 ## 0.3.0
 
 ### Minor Changes
