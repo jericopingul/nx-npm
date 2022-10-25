@@ -8,6 +8,7 @@
     "directory": "dist/hello-tsc"
   },
   "publishConfig": {
-    "directory": "../../dist/packages/hello-tsc"
+    "directory": "../../dist/packages/hello-tsc",
+    "registry": "https://npm.pkg.github.com"
   }
 }
