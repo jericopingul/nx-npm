@@ -1,5 +1,11 @@
 # @jericopingul/my-nx-plugin
 
+## 2.7.0
+
+### Minor Changes
+
+- [#33](https://github.com/jericopingul/nx-npm/pull/33) [`3815d497`](https://github.com/jericopingul/nx-npm/commit/3815d49764c287ab4053248d4e4fcc7c3f3f5e39) Thanks [@jericopingul](https://github.com/jericopingul)! - my-other-package major nx-plugin-minor no explicit bump for hello-tsc
+
 ## 2.6.0
 
 ### Minor Changes
