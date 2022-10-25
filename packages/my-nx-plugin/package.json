@@ -10,6 +10,9 @@
     "directory": "packages/my-nx-plugin"
   },
   "devDependencies": {
-    "@jericopingul/my-other-package": "workspace:^"
+    "@jericopingul/my-other-package": "workspace:*"
+  },
+  "publishConfig": {
+    "directory": "../../dist/packages/my-nx-plugin"
   }
 }

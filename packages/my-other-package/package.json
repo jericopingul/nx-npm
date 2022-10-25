@@ -6,5 +6,8 @@
     "type": "git",
     "url": "https://github.com/jericopingul/nx-npm.git",
     "directory": "packages/my-other-package"
+  },
+  "publishConfig": {
+    "directory": "../../dist/packages/my-other-package"
   }
 }
