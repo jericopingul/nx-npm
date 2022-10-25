@@ -70,15 +70,18 @@ importers:
       '@jericopingul/my-other-package': workspace:^
     devDependencies:
       '@jericopingul/my-other-package': link:../my-other-package
+    publishDirectory: ../../dist/packages/hello-tsc
 
   packages/my-nx-plugin:
     specifiers:
-      '@jericopingul/my-other-package': workspace:^
+      '@jericopingul/my-other-package': workspace:*
     devDependencies:
       '@jericopingul/my-other-package': link:../my-other-package
+    publishDirectory: ../../dist/packages/my-nx-plugin
 
   packages/my-other-package:
     specifiers: {}
+    publishDirectory: ../../dist/packages/my-other-package
 
 packages:
 
