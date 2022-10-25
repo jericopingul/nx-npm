@@ -1,5 +1,11 @@
 # @jericopingul/hello-tsc
 
+## 0.4.1
+
+### Patch Changes
+
+- [#37](https://github.com/jericopingul/nx-npm/pull/37) [`f2046cad`](https://github.com/jericopingul/nx-npm/commit/f2046cad3a49bef174e475fa00acd010e242ec4a) Thanks [@jericopingul](https://github.com/jericopingul)! - git status
+
 ## 0.4.0
 
 ### Minor Changes
