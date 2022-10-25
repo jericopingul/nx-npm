@@ -6,9 +6,5 @@
     "type": "git",
     "url": "https://github.com/jericopingul/nx-npm.git",
     "directory": "packages/hello-tsc"
-  },
-  "publishConfig": {
-    "directory": "../../dist/packages/hello-tsc",
-    "registry": "https://npm.pkg.github.com"
   }
 }

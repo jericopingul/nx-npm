@@ -8,9 +8,5 @@
     "type": "git",
     "url": "https://github.com/jericopingul/nx-npm.git",
     "directory": "packages/my-nx-plugin"
-  },
-  "publishConfig": {
-    "directory": "../../dist/packages/my-nx-plugin",
-    "registry": "https://npm.pkg.github.com"
   }
 }
