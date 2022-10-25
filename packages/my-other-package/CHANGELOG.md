@@ -1,5 +1,11 @@
 # @jericopingul/my-other-package
 
+## 6.0.0
+
+### Major Changes
+
+- [#35](https://github.com/jericopingul/nx-npm/pull/35) [`6539275f`](https://github.com/jericopingul/nx-npm/commit/6539275fb37fe2ea025c2b90f88d5a86b8f6b38f) Thanks [@jericopingul](https://github.com/jericopingul)! - same as previous
+
 ## 5.0.0
 
 ### Major Changes
